@@ -1,0 +1,23 @@
+{
+  "name": "pi-testing",
+  "version": "0.0.0",
+  "description": "",
+  "main": "rgb.js",
+  "dependencies": {
+    "pi-gpio": "^0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thedustinsmith/pi-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thedustinsmith/pi-testing/issues"
+  },
+  "homepage": "https://github.com/thedustinsmith/pi-testing"
+}
