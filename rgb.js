@@ -1,5 +1,5 @@
-//var chip = require("./utility"),
-var	R = 11,
+var chip = require("./utility"),
+		R = 11,
 		G = 13,
 		B = 15;
 
@@ -24,16 +24,16 @@ function processData(d) {
 }
 
 function doRGB(r, g, b) {
-	// chip.write(R, r);
-	// chip.write(G, g);
-	// chip.write(B, b);
+	chip.write(R, r);
+	chip.write(G, g);
+	chip.write(B, b);
 	console.log("R:" + r + ", G:" + g + ", B:" + b);
 }
 
 function exit () {
-	// chip.gpio.close(R);
-	// chip.gpio.close(G);
-	// chip.gpio.close(B);
+	chip.writeLow(R);
+	chip.writeLow(G);
+	chip.writeLow(B);
 	process.exit(1);
 }
 process.stdin.on('data', processData);
