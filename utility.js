@@ -10,6 +10,7 @@ var write = function (pin, val, callback) {
 	gpio.open(pin, "output", function (err) {
 		gpio.write(pin, val, function () {
 			gpio.close(pin);
+			console.log("closing pin "+ pin);
 			if(callback) {
 				callback();
 			}
